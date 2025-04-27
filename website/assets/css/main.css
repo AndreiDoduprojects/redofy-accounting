@@ -1,0 +1,117 @@
+/* Main CSS for Redofy Accounting Website - Legacy Bridge */
+
+/* Legacy variable mapping to Morphic system */
+:root {
+  /* Map legacy variables to Morphic variables */
+  --primary-color: var(--morphic-primary);
+  --secondary-color: var(--morphic-secondary);
+  --accent-color: var(--morphic-accent);
+  --background-color: var(--morphic-bg-primary);
+  --text-color: var(--morphic-text-primary);
+  --error-color: var(--morphic-error);
+  --success-color: var(--morphic-success);
+  --warning-color: var(--morphic-warning);
+  --border-color: var(--morphic-border-light);
+  --light-gray: var(--morphic-neutral-100);
+  --medium-gray: var(--morphic-neutral-300);
+  --dark-gray: var(--morphic-neutral-600);
+}
+
+/* Legacy classes with direct CSS (no @apply) */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  box-shadow: var(--morphic-shadow-sm);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--morphic-primary), var(--morphic-primary-dark));
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--morphic-primary-dark), var(--morphic-primary));
+  box-shadow: var(--morphic-shadow-md);
+}
+
+.btn-secondary {
+  background-color: var(--morphic-bg-secondary);
+  color: var(--morphic-text-primary);
+  border: 1px solid var(--morphic-border-light);
+}
+
+.btn-secondary:hover {
+  background-color: var(--morphic-bg-tertiary);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background-color: var(--morphic-bg-primary);
+  border-radius: var(--morphic-radius-lg);
+  box-shadow: var(--morphic-shadow-md);
+  backdrop-filter: var(--morphic-blur-backdrop);
+  -webkit-backdrop-filter: var(--morphic-blur-backdrop);
+  border: 1px solid var(--morphic-border-light);
+  padding: var(--morphic-space-6);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--morphic-transition-base), box-shadow var(--morphic-transition-base);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Legacy grid system */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.col {
+  padding: 0 1rem;
+  flex: 1;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  
+  .col {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+} 

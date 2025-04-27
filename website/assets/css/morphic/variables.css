@@ -1,0 +1,148 @@
+/* 
+ * Redofy Morphic Design System - Variables
+ * Core design tokens and variables for the morphic UI
+ */
+
+:root {
+  /* Color system - Main palette */
+  --morphic-primary: #0066cc;
+  --morphic-primary-rgb: 0, 102, 204;
+  --morphic-primary-dark: #0055aa;
+  --morphic-primary-light: #3399ff;
+  --morphic-secondary: #35495e;
+  --morphic-secondary-rgb: 53, 73, 94;
+  --morphic-accent: #00c6ff;
+  --morphic-accent-rgb: 0, 198, 255;
+  
+  /* Success, warning, error states */
+  --morphic-success: #10b981;
+  --morphic-success-rgb: 16, 185, 129;
+  --morphic-warning: #f59e0b;
+  --morphic-warning-rgb: 245, 158, 11;
+  --morphic-error: #ef4444;
+  --morphic-error-rgb: 239, 68, 68;
+  
+  /* Neutral colors */
+  --morphic-neutral-50: #f9fafb;
+  --morphic-neutral-100: #f3f4f6;
+  --morphic-neutral-200: #e5e7eb;
+  --morphic-neutral-300: #d1d5db;
+  --morphic-neutral-400: #9ca3af;
+  --morphic-neutral-500: #6b7280;
+  --morphic-neutral-600: #4b5563;
+  --morphic-neutral-700: #374151;
+  --morphic-neutral-800: #1f2937;
+  --morphic-neutral-900: #111827;
+  
+  /* Light mode specific */
+  --morphic-bg-primary: rgba(255, 255, 255, 0.95);
+  --morphic-bg-primary-rgb: 255, 255, 255;
+  --morphic-bg-secondary: rgba(248, 250, 252, 0.8);
+  --morphic-bg-secondary-rgb: 248, 250, 252;  
+  --morphic-bg-tertiary: rgba(241, 245, 249, 0.5);
+  --morphic-text-primary: var(--morphic-neutral-900);
+  --morphic-text-secondary: var(--morphic-neutral-600);
+  --morphic-text-tertiary: var(--morphic-neutral-500);
+  --morphic-border-light: rgba(226, 232, 240, 0.7);
+  --morphic-border-medium: rgba(203, 213, 225, 0.7);
+  
+  /* Glass effect */
+  --morphic-glass-border: linear-gradient(
+    130deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  --morphic-blur-backdrop: blur(12px);
+  --morphic-blur-sm: blur(4px);
+  --morphic-blur-md: blur(8px);
+  --morphic-blur-lg: blur(16px);
+  
+  /* Shadows */
+  --morphic-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04),
+                       0 2px 4px rgba(0, 0, 0, 0.06);
+  --morphic-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.02),
+                       0 4px 8px rgba(0, 0, 0, 0.04),
+                       0 8px 16px rgba(0, 0, 0, 0.06);
+  --morphic-shadow-lg: 0 4px 6px rgba(0, 0, 0, 0.01),
+                       0 8px 16px rgba(0, 0, 0, 0.03),
+                       0 16px 32px rgba(0, 0, 0, 0.05);
+  --morphic-shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.04);
+  
+  /* Glow effects */
+  --morphic-glow-sm: 0 0 8px rgba(var(--morphic-primary-rgb), 0.2);
+  --morphic-glow-md: 0 0 16px rgba(var(--morphic-primary-rgb), 0.3);
+  --morphic-glow-lg: 0 0 24px rgba(var(--morphic-primary-rgb), 0.4);
+  
+  /* Border radius */
+  --morphic-radius-sm: 0.25rem;
+  --morphic-radius-md: 0.5rem;
+  --morphic-radius-lg: 1rem;
+  --morphic-radius-xl: 1.5rem;
+  --morphic-radius-full: 9999px;
+  
+  /* Spacing */
+  --morphic-space-1: 0.25rem;
+  --morphic-space-2: 0.5rem;
+  --morphic-space-3: 0.75rem;
+  --morphic-space-4: 1rem;
+  --morphic-space-5: 1.25rem;
+  --morphic-space-6: 1.5rem;
+  --morphic-space-8: 2rem;
+  --morphic-space-10: 2.5rem;
+  --morphic-space-12: 3rem;
+  --morphic-space-16: 4rem;
+  --morphic-space-20: 5rem;
+  
+  /* Transitions */
+  --morphic-transition-base: 0.2s ease;
+  --morphic-transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --morphic-transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  
+  /* Z-index scale */
+  --morphic-z-0: 0;
+  --morphic-z-10: 10;
+  --morphic-z-20: 20;
+  --morphic-z-30: 30;
+  --morphic-z-40: 40;
+  --morphic-z-50: 50;
+  --morphic-z-auto: auto;
+  
+  /* Legacy compatibility - fallbacks for old code */
+  --primary-color: var(--morphic-primary, #0066cc);
+  --secondary-color: var(--morphic-secondary, #35495e);
+  --accent-color: var(--morphic-accent, #00c6ff);
+  --error-color: var(--morphic-error, #ef4444);
+  --success-color: var(--morphic-success, #10b981);
+  --warning-color: var(--morphic-warning, #f59e0b);
+}
+
+/* Dark mode theme */
+.dark-mode {
+  --morphic-bg-primary: rgba(15, 23, 42, 0.95);
+  --morphic-bg-primary-rgb: 15, 23, 42;
+  --morphic-bg-secondary: rgba(30, 41, 59, 0.8);
+  --morphic-bg-secondary-rgb: 30, 41, 59;
+  --morphic-bg-tertiary: rgba(51, 65, 85, 0.5);
+  --morphic-text-primary: #f8fafc;
+  --morphic-text-secondary: #e2e8f0;
+  --morphic-text-tertiary: #cbd5e1;
+  --morphic-border-light: rgba(71, 85, 105, 0.6);
+  --morphic-border-medium: rgba(100, 116, 139, 0.6);
+  
+  --morphic-glass-border: linear-gradient(
+    130deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  
+  --morphic-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2),
+                       0 2px 4px rgba(0, 0, 0, 0.3);
+  --morphic-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.2),
+                       0 4px 8px rgba(0, 0, 0, 0.2),
+                       0 8px 16px rgba(0, 0, 0, 0.2);
+  --morphic-shadow-lg: 0 4px 6px rgba(0, 0, 0, 0.1),
+                       0 8px 16px rgba(0, 0, 0, 0.1),
+                       0 16px 32px rgba(0, 0, 0, 0.15);
+} 

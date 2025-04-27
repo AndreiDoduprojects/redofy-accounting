@@ -1,0 +1,13 @@
+{
+  "name": "@redofy-accounting/dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^3.9.0"
+  }
+}

@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Tailwind extensions */
+@layer components {
+  /* Morphic card components */
+  .morphic-card {
+    @apply bg-bg-primary rounded-lg shadow-md backdrop-blur-md border border-border-light p-6 relative overflow-hidden transition-all;
+  }
+  
+  .morphic-card-glass {
+    @apply bg-bg-secondary relative;
+  }
+  
+  .morphic-card-sm {
+    @apply p-4;
+  }
+  
+  .morphic-card-lg {
+    @apply p-8;
+  }
+  
+  /* Morphic button components */
+  .morphic-btn {
+    @apply inline-flex items-center justify-center py-3 px-5 rounded-md font-semibold text-base text-center transition-all cursor-pointer select-none relative overflow-hidden border-none shadow-sm;
+  }
+  
+  .morphic-btn-primary {
+    @apply bg-primary text-white;
+  }
+  
+  .morphic-btn-secondary {
+    @apply bg-bg-secondary text-text-primary border border-border-light;
+  }
+  
+  .morphic-btn-sm {
+    @apply py-2 px-3 text-sm;
+  }
+  
+  .morphic-btn-lg {
+    @apply py-4 px-6 text-lg;
+  }
+  
+  /* Morphic form elements */
+  .morphic-input {
+    @apply block w-full py-3 px-4 text-base text-text-primary bg-bg-tertiary border border-border-light rounded-md transition-all;
+  }
+  
+  .morphic-label {
+    @apply block mb-2 font-medium text-text-secondary;
+  }
+  
+  .morphic-form-group {
+    @apply mb-4;
+  }
+  
+  /* Legacy class mappings via Tailwind - alternative approach */
+  .legacy-container {
+    @apply w-full max-w-screen-xl mx-auto px-4;
+  }
+  
+  .legacy-btn {
+    @apply inline-flex items-center justify-center py-3 px-5 rounded-md font-semibold text-base text-center transition-all cursor-pointer border-none;
+  }
+  
+  .legacy-btn-primary {
+    @apply bg-primary text-white;
+  }
+  
+  .legacy-card {
+    @apply bg-bg-primary rounded-lg shadow-md p-6;
+  }
+}
+
+/* Dark mode specific overrides - they'll be applied when .dark-mode class is present */
+.dark-mode {
+  @apply bg-bg-primary text-text-primary;
+} 

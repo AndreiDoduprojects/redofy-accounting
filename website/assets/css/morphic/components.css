@@ -1,0 +1,526 @@
+/* 
+ * Redofy Morphic Design System - Components
+ * Component styling for the morphic UI
+ */
+
+/* ---------- Morphic Cards ---------- */
+.morphic-card {
+  background-color: var(--morphic-bg-primary);
+  border-radius: var(--morphic-radius-lg);
+  box-shadow: var(--morphic-shadow-md);
+  backdrop-filter: var(--morphic-blur-backdrop);
+  -webkit-backdrop-filter: var(--morphic-blur-backdrop);
+  border: 1px solid var(--morphic-border-light);
+  padding: var(--morphic-space-6);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--morphic-transition-base), box-shadow var(--morphic-transition-base);
+}
+
+/* Glass card with shimmering border */
+.morphic-card-glass {
+  background-color: var(--morphic-bg-secondary);
+  position: relative;
+}
+
+.morphic-card-glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: var(--morphic-glass-border);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.morphic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--morphic-shadow-lg);
+}
+
+.morphic-card-sm {
+  padding: var(--morphic-space-4);
+}
+
+.morphic-card-lg {
+  padding: var(--morphic-space-8);
+}
+
+.morphic-card-flat {
+  box-shadow: none;
+  border: 1px solid var(--morphic-border-light);
+}
+
+.morphic-card-prominent {
+  box-shadow: var(--morphic-shadow-lg);
+}
+
+/* Card with glow effect */
+.morphic-card-glow {
+  box-shadow: var(--morphic-shadow-md), var(--morphic-glow-md);
+}
+
+.morphic-card-glow:hover {
+  box-shadow: var(--morphic-shadow-lg), var(--morphic-glow-lg);
+}
+
+/* ---------- Morphic Buttons ---------- */
+.morphic-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--morphic-space-3) var(--morphic-space-5);
+  border-radius: var(--morphic-radius-md);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  transition: all var(--morphic-transition-base);
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  box-shadow: var(--morphic-shadow-sm);
+}
+
+.morphic-btn:focus {
+  outline: none;
+  box-shadow: var(--morphic-shadow-sm), 0 0 0 3px rgba(var(--morphic-primary-rgb), 0.3);
+}
+
+.morphic-btn:active {
+  transform: translateY(1px);
+}
+
+/* Primary button with gradient */
+.morphic-btn-primary {
+  background: linear-gradient(135deg, var(--morphic-primary), var(--morphic-primary-dark));
+  color: white;
+}
+
+.morphic-btn-primary:hover {
+  background: linear-gradient(135deg, var(--morphic-primary-dark), var(--morphic-primary));
+  box-shadow: var(--morphic-shadow-md);
+}
+
+/* Secondary button */
+.morphic-btn-secondary {
+  background-color: var(--morphic-bg-secondary);
+  color: var(--morphic-text-primary);
+  border: 1px solid var(--morphic-border-light);
+}
+
+.morphic-btn-secondary:hover {
+  background-color: var(--morphic-bg-tertiary);
+}
+
+/* Outline button */
+.morphic-btn-outline {
+  background-color: transparent;
+  color: var(--morphic-primary);
+  border: 2px solid var(--morphic-primary);
+  box-shadow: none;
+}
+
+.morphic-btn-outline:hover {
+  background-color: rgba(var(--morphic-primary-rgb), 0.05);
+}
+
+/* Ghost button */
+.morphic-btn-ghost {
+  background-color: transparent;
+  color: var(--morphic-text-primary);
+  box-shadow: none;
+}
+
+.morphic-btn-ghost:hover {
+  background-color: var(--morphic-bg-tertiary);
+}
+
+/* Button sizes */
+.morphic-btn-sm {
+  padding: var(--morphic-space-2) var(--morphic-space-3);
+  font-size: 0.875rem;
+}
+
+.morphic-btn-lg {
+  padding: var(--morphic-space-4) var(--morphic-space-6);
+  font-size: 1.125rem;
+}
+
+/* Rounded button */
+.morphic-btn-rounded {
+  border-radius: var(--morphic-radius-full);
+}
+
+/* Disabled button */
+.morphic-btn:disabled,
+.morphic-btn.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Button with icon */
+.morphic-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--morphic-space-2);
+  border-radius: var(--morphic-radius-md);
+  line-height: 1;
+}
+
+.morphic-btn-icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* ---------- Morphic Form Elements ---------- */
+.morphic-input {
+  display: block;
+  width: 100%;
+  padding: var(--morphic-space-3) var(--morphic-space-4);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--morphic-text-primary);
+  background-color: var(--morphic-bg-tertiary);
+  border: 1px solid var(--morphic-border-light);
+  border-radius: var(--morphic-radius-md);
+  transition: all var(--morphic-transition-base);
+}
+
+.morphic-input:focus {
+  outline: none;
+  border-color: var(--morphic-primary);
+  box-shadow: 0 0 0 3px rgba(var(--morphic-primary-rgb), 0.2);
+}
+
+.morphic-input::placeholder {
+  color: var(--morphic-text-tertiary);
+}
+
+.morphic-input-group {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.morphic-input-group .morphic-input {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+}
+
+.morphic-input-group-prepend,
+.morphic-input-group-append {
+  display: flex;
+}
+
+.morphic-input-group-text {
+  display: flex;
+  align-items: center;
+  padding: var(--morphic-space-2) var(--morphic-space-3);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--morphic-text-secondary);
+  text-align: center;
+  white-space: nowrap;
+  background-color: var(--morphic-bg-secondary);
+  border: 1px solid var(--morphic-border-light);
+}
+
+.morphic-input-group-prepend .morphic-input-group-text {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.morphic-input-group-append .morphic-input-group-text {
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Form label */
+.morphic-label {
+  display: block;
+  margin-bottom: var(--morphic-space-2);
+  font-weight: 500;
+  color: var(--morphic-text-secondary);
+}
+
+/* Form group */
+.morphic-form-group {
+  margin-bottom: var(--morphic-space-4);
+}
+
+/* Form feedback */
+.morphic-form-feedback {
+  margin-top: var(--morphic-space-2);
+  font-size: 0.875rem;
+}
+
+.morphic-form-feedback-error {
+  color: var(--morphic-error);
+}
+
+.morphic-form-feedback-success {
+  color: var(--morphic-success);
+}
+
+/* --------- Morphic Badge --------- */
+.morphic-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--morphic-space-1) var(--morphic-space-2);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  color: white;
+  background-color: var(--morphic-primary);
+  border-radius: var(--morphic-radius-full);
+}
+
+.morphic-badge-success {
+  background-color: var(--morphic-success);
+}
+
+.morphic-badge-warning {
+  background-color: var(--morphic-warning);
+}
+
+.morphic-badge-error {
+  background-color: var(--morphic-error);
+}
+
+.morphic-badge-outline {
+  background-color: transparent;
+  border: 1px solid var(--morphic-primary);
+  color: var(--morphic-primary);
+}
+
+/* --------- Morphic Alert --------- */
+.morphic-alert {
+  position: relative;
+  padding: var(--morphic-space-4);
+  margin-bottom: var(--morphic-space-4);
+  border: 1px solid transparent;
+  border-radius: var(--morphic-radius-md);
+  backdrop-filter: var(--morphic-blur-sm);
+  -webkit-backdrop-filter: var(--morphic-blur-sm);
+}
+
+.morphic-alert-primary {
+  color: var(--morphic-primary-dark);
+  background-color: rgba(var(--morphic-primary-rgb), 0.1);
+  border-color: rgba(var(--morphic-primary-rgb), 0.2);
+}
+
+.morphic-alert-success {
+  color: var(--morphic-success);
+  background-color: rgba(var(--morphic-success-rgb), 0.1);
+  border-color: rgba(var(--morphic-success-rgb), 0.2);
+}
+
+.morphic-alert-warning {
+  color: var(--morphic-warning);
+  background-color: rgba(var(--morphic-warning-rgb), 0.1);
+  border-color: rgba(var(--morphic-warning-rgb), 0.2);
+}
+
+.morphic-alert-error {
+  color: var(--morphic-error);
+  background-color: rgba(var(--morphic-error-rgb), 0.1);
+  border-color: rgba(var(--morphic-error-rgb), 0.2);
+}
+
+/* --------- Morphic Spinner --------- */
+.morphic-spinner {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25rem solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: morphic-spinner 0.75s linear infinite;
+}
+
+.morphic-spinner-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.2rem;
+}
+
+.morphic-spinner-lg {
+  width: 3rem;
+  height: 3rem;
+  border-width: 0.3rem;
+}
+
+@keyframes morphic-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* --------- Morphic Divider --------- */
+.morphic-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--morphic-border-medium), transparent);
+  margin: var(--morphic-space-6) 0;
+  border: none;
+}
+
+.morphic-divider-vertical {
+  width: 1px;
+  height: auto;
+  background: linear-gradient(to bottom, transparent, var(--morphic-border-medium), transparent);
+  margin: 0 var(--morphic-space-6);
+}
+
+/* --------- Morphic Tabs --------- */
+.morphic-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--morphic-border-light);
+  margin-bottom: var(--morphic-space-6);
+}
+
+.morphic-tab {
+  padding: var(--morphic-space-3) var(--morphic-space-4);
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  color: var(--morphic-text-secondary);
+  cursor: pointer;
+  transition: all var(--morphic-transition-base);
+}
+
+.morphic-tab:hover {
+  color: var(--morphic-primary);
+}
+
+.morphic-tab.active {
+  color: var(--morphic-primary);
+  border-bottom-color: var(--morphic-primary);
+}
+
+/* --------- Morphic Avatar --------- */
+.morphic-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--morphic-bg-secondary);
+  color: var(--morphic-text-primary);
+  font-weight: 600;
+  overflow: hidden;
+  border: 2px solid var(--morphic-border-light);
+}
+
+.morphic-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.morphic-avatar-sm {
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.75rem;
+}
+
+.morphic-avatar-lg {
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.25rem;
+}
+
+/* --------- Morphic Glassmorphism Effects --------- */
+.morphic-glass {
+  background: rgba(var(--morphic-bg-primary-rgb), 0.6);
+  backdrop-filter: var(--morphic-blur-md);
+  -webkit-backdrop-filter: var(--morphic-blur-md);
+  border: 1px solid rgba(var(--morphic-border-light), 0.5);
+  box-shadow: var(--morphic-shadow-sm);
+}
+
+.morphic-glass-dark {
+  background: rgba(var(--morphic-bg-secondary-rgb), 0.8);
+  backdrop-filter: var(--morphic-blur-md);
+  -webkit-backdrop-filter: var(--morphic-blur-md);
+  border: 1px solid rgba(var(--morphic-border-medium), 0.5);
+  box-shadow: var(--morphic-shadow-sm);
+}
+
+/* --------- Morphic Animations --------- */
+@keyframes morphic-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes morphic-slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes morphic-slide-down {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes morphic-scale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.morphic-animate-fade-in {
+  animation: morphic-fade-in 0.3s ease-out;
+}
+
+.morphic-animate-slide-up {
+  animation: morphic-slide-up 0.3s ease-out;
+}
+
+.morphic-animate-slide-down {
+  animation: morphic-slide-down 0.3s ease-out;
+}
+
+.morphic-animate-scale {
+  animation: morphic-scale 0.3s ease-out;
+} 
