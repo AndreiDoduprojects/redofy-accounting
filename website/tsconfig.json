@@ -30,6 +30,10 @@
     "./**/*.vue"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "components/ContactForm.vue",
+    "components/IceBackground.vue",
+    "components/SvenskNavbar.vue",
+    "components/PricingPlans.vue"
   ]
 } 
