@@ -1,30 +1,26 @@
 {
-  "name": "@redofy-accounting/monorepo",
+  "name": "redofy-monorepo",
   "version": "1.0.0",
   "private": true,
-  "description": "Redofy - Modern AI-powered accounting system for Swedish businesses",
+  "description": "Redofy Accounting Monorepo",
   "workspaces": [
-    "cms",
     "website",
     "ui-dashboard",
-    "app"
+    "cms"
   ],
   "scripts": {
-    "dev": "nuxt dev",
-    "dev:cms": "cd cms && yarn dev",
     "dev:website": "cd website && yarn dev",
     "dev:dashboard": "cd ui-dashboard && yarn dev",
-    "dev:app": "cd app && yarn dev",
-    "build": "nuxt build",
-    "build:all": "yarn workspaces foreach run build",
-    "generate": "nuxt generate"
+    "dev:cms": "cd cms && npx directus start",
+    "build:website": "cd website && yarn build",
+    "build:dashboard": "cd ui-dashboard && yarn build",
+    "build:cms": "cd cms/extensions && yarn build",
+    "generate:website": "cd website && yarn generate",
+    "generate:dashboard": "cd ui-dashboard && yarn generate",
+    "test:cms": "cd cms/extensions && yarn test"
   },
-  "packageManager": "yarn@4.9.1+sha512.f95ce356460e05be48d66401c1ae64ef84d163dd689964962c6888a9810865e39097a5e9de748876c2e0bf89b232d583c33982773e9903ae7a76257270986538",
   "dependencies": {
-    "nuxt": "^3.16.2"
+    "vue": "^3.4.0"
   },
-  "devDependencies": {
-    "typescript": "^5.2.2",
-    "vue-tsc": "^1.8.22"
-  }
+  "packageManager": "yarn@4.9.1"
 }

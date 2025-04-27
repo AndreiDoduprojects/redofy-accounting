@@ -1,18 +1,23 @@
 {
   "name": "@redofy-accounting/cms",
   "version": "1.0.0",
-  "description": "Directus CMS for Redofy Accounting",
   "private": true,
+  "description": "Redofy CMS powered by Directus",
+  "main": "index.js",
   "scripts": {
     "start": "directus start",
-    "dev": "directus start",
     "bootstrap": "directus bootstrap",
-    "migrate:latest": "directus database migrate:latest",
-    "migrate:up": "directus database migrate:up",
-    "migrate:down": "directus database migrate:down"
+    "init": "yarn install && yarn bootstrap",
+    "schema:snapshot": "directus schema snapshot ./snapshots/schema.yaml",
+    "schema:apply": "directus schema apply ./snapshots/schema.yaml"
   },
   "dependencies": {
-    "directus": "^10.7.0",
-    "pg": "^8.11.3"
+    "@directus/sdk": "^19.1.0",
+    "directus": "^11.6.1",
+    "dotenv": "^16.5.0",
+    "pg": "^8.15.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
   }
 }
