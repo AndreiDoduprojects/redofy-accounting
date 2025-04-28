@@ -156,7 +156,7 @@ const plans = [
 <style scoped>
 .pricing-section {
   padding: 6rem 0;
-  background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+  background: linear-gradient(to bottom, var(--morphic-bg-gradient-start, #f8fafc), var(--morphic-bg-gradient-end, #f1f5f9));
 }
 
 .container {
@@ -174,7 +174,7 @@ const plans = [
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, #0284c7, #0ea5e9);
+  background: linear-gradient(45deg, var(--morphic-primary, #0284c7), var(--morphic-accent, #0ea5e9));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -182,7 +182,7 @@ const plans = [
 
 .pricing-subtitle {
   font-size: 1.25rem;
-  color: #64748b;
+  color: var(--morphic-text-secondary, #64748b);
   max-width: 650px;
   margin: 0 auto 2rem;
 }
@@ -196,18 +196,18 @@ const plans = [
 
 .billing-toggle span {
   font-size: 1rem;
-  color: #64748b;
+  color: var(--morphic-text-tertiary, #64748b);
   font-weight: 500;
 }
 
 .billing-toggle span.active {
-  color: #0f172a;
+  color: var(--morphic-text-primary, #0f172a);
   font-weight: 600;
 }
 
 .save-badge {
   display: inline-block;
-  background: #10b981;
+  background: var(--morphic-success, #10b981);
   color: white;
   font-size: 0.75rem;
   font-weight: 500;
@@ -236,7 +236,7 @@ const plans = [
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #e2e8f0;
+  background-color: var(--morphic-bg-tertiary, #e2e8f0);
   transition: .4s;
   border-radius: 34px;
 }
@@ -251,15 +251,15 @@ const plans = [
   background-color: white;
   transition: .4s;
   border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--morphic-shadow-sm, 0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 input:checked + .slider {
-  background-color: #3b82f6;
+  background-color: var(--morphic-primary, #3b82f6);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #3b82f6;
+  box-shadow: 0 0 1px var(--morphic-primary, #3b82f6);
 }
 
 input:checked + .slider:before {
@@ -274,24 +274,24 @@ input:checked + .slider:before {
 }
 
 .pricing-card {
-  background: white;
+  background: var(--morphic-bg-primary, white);
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--morphic-shadow-md, 0 10px 25px rgba(0, 0, 0, 0.05));
   overflow: hidden;
   transition: all 0.3s ease;
   position: relative;
-  border: 1px solid #f1f5f9;
+  border: 1px solid var(--morphic-border-light, #f1f5f9);
 }
 
 .pricing-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--morphic-shadow-lg, 0 15px 35px rgba(0, 0, 0, 0.1));
 }
 
 .pricing-card.popular {
   transform: scale(1.03);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-  border: 2px solid #3b82f6;
+  box-shadow: var(--morphic-shadow-lg, 0 15px 35px rgba(0, 0, 0, 0.1));
+  border: 2px solid var(--morphic-primary, #3b82f6);
 }
 
 .pricing-card.popular:hover {
@@ -302,7 +302,7 @@ input:checked + .slider:before {
   position: absolute;
   top: 0;
   right: 2rem;
-  background: #3b82f6;
+  background: var(--morphic-primary, #3b82f6);
   color: white;
   font-size: 0.875rem;
   font-weight: 600;
@@ -317,18 +317,18 @@ input:checked + .slider:before {
 .plan-name {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--morphic-text-primary, #0f172a);
   margin-bottom: 0.5rem;
 }
 
 .plan-description {
   font-size: 0.95rem;
-  color: #64748b;
+  color: var(--morphic-text-secondary, #64748b);
 }
 
 .pricing-card-price {
   padding: 1rem 2rem 2rem;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid var(--morphic-border-light, #f1f5f9);
 }
 
 .price {
@@ -340,26 +340,26 @@ input:checked + .slider:before {
 .currency {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #0f172a;
+  color: var(--morphic-text-primary, #0f172a);
 }
 
 .amount {
   font-size: 3rem;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--morphic-text-primary, #0f172a);
   margin: 0 0.3rem;
 }
 
 .period {
   font-size: 1rem;
-  color: #64748b;
+  color: var(--morphic-text-tertiary, #64748b);
   align-self: flex-end;
   margin-bottom: 0.5rem;
 }
 
 .monthly-equivalent {
   font-size: 0.85rem;
-  color: #94a3b8;
+  color: var(--morphic-text-tertiary, #94a3b8);
   margin-top: 0.5rem;
 }
 
@@ -372,13 +372,13 @@ input:checked + .slider:before {
   align-items: flex-start;
   margin-bottom: 1rem;
   font-size: 0.95rem;
-  color: #334155;
+  color: var(--morphic-text-secondary, #334155);
 }
 
 .feature-icon {
   width: 18px;
   height: 18px;
-  color: #0ea5e9;
+  color: var(--morphic-accent, #0ea5e9);
   margin-right: 0.75rem;
   flex-shrink: 0;
 }
@@ -400,14 +400,14 @@ input:checked + .slider:before {
 }
 
 .cta-button.primary {
-  background: linear-gradient(to right, #0284c7, #0ea5e9);
+  background: linear-gradient(to right, var(--morphic-primary, #0284c7), var(--morphic-accent, #0ea5e9));
   color: white;
   box-shadow: 0 5px 15px rgba(14, 165, 233, 0.2);
 }
 
 .cta-button.secondary {
-  background: #f1f5f9;
-  color: #0f172a;
+  background: var(--morphic-bg-tertiary, #f1f5f9);
+  color: var(--morphic-text-primary, #0f172a);
 }
 
 .cta-button.primary:hover {
@@ -415,21 +415,21 @@ input:checked + .slider:before {
 }
 
 .cta-button.secondary:hover {
-  background: #e2e8f0;
+  background: var(--morphic-bg-secondary, #e2e8f0);
 }
 
 .no-contract {
   font-size: 0.8rem;
-  color: #94a3b8;
+  color: var(--morphic-text-tertiary, #94a3b8);
   margin-top: 0.75rem;
 }
 
 .enterprise-plan {
-  background: white;
+  background: var(--morphic-bg-primary, white);
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--morphic-shadow-md, 0 10px 25px rgba(0, 0, 0, 0.05));
   margin-bottom: 4rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--morphic-border-light, #e2e8f0);
 }
 
 .enterprise-content {
@@ -446,13 +446,13 @@ input:checked + .slider:before {
 .enterprise-info h3 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--morphic-text-primary, #0f172a);
   margin-bottom: 1rem;
 }
 
 .enterprise-info p {
   font-size: 1.1rem;
-  color: #64748b;
+  color: var(--morphic-text-secondary, #64748b);
   margin-bottom: 1.5rem;
   max-width: 80%;
 }
@@ -466,13 +466,13 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   font-size: 1rem;
-  color: #334155;
+  color: var(--morphic-text-secondary, #334155);
 }
 
 .enterprise-info li svg {
   width: 18px;
   height: 18px;
-  color: #0ea5e9;
+  color: var(--morphic-accent, #0ea5e9);
   margin-right: 0.5rem;
 }
 
@@ -482,6 +482,30 @@ input:checked + .slider:before {
 
 .enterprise-action .cta-button {
   padding: 0.9rem 2rem;
+}
+
+/* Dark mode overrides */
+:root.dark .pricing-section {
+  background: linear-gradient(to bottom, var(--morphic-bg-gradient-start-dark, #0f172a), var(--morphic-bg-gradient-end-dark, #1e293b));
+}
+
+:root.dark .pricing-card,
+:root.dark .enterprise-plan {
+  background: var(--morphic-bg-primary-dark, #1e293b);
+  border-color: var(--morphic-border-dark, #334155);
+}
+
+:root.dark .slider {
+  background-color: var(--morphic-bg-tertiary-dark, #334155);
+}
+
+:root.dark .cta-button.secondary {
+  background: var(--morphic-bg-tertiary-dark, #334155);
+  color: var(--morphic-text-primary-dark, #f1f5f9);
+}
+
+:root.dark .cta-button.secondary:hover {
+  background: var(--morphic-bg-secondary-dark, #475569);
 }
 
 @media (max-width: 768px) {

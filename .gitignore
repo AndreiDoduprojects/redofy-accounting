@@ -37,6 +37,7 @@ yarn-error.log*
 .fleet
 .idea
 .vscode
+*.sw[a-p]
 
 # Local env files
 .env
@@ -46,3 +47,10 @@ yarn-error.log*
 # CMS data
 cms/data
 cms/uploads
+
+# Tailwind generated
+.tailwind-cache/
+
+# Generated files
+*.generated.*
+.eslintcache

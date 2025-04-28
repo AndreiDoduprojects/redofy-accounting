@@ -4,77 +4,86 @@
  */
 
 :root {
-  /* Color system - Main palette */
-  --morphic-primary: #0066cc;
-  --morphic-primary-rgb: 0, 102, 204;
-  --morphic-primary-dark: #0055aa;
-  --morphic-primary-light: #3399ff;
-  --morphic-secondary: #35495e;
-  --morphic-secondary-rgb: 53, 73, 94;
-  --morphic-accent: #00c6ff;
-  --morphic-accent-rgb: 0, 198, 255;
+  /* Base colors */
+  --morphic-primary: #3b82f6; /* Blue */
+  --morphic-primary-light: #60a5fa;
+  --morphic-primary-dark: #2563eb;
+  --morphic-primary-rgb: 59, 130, 246;
   
-  /* Success, warning, error states */
+  --morphic-accent: #8b5cf6; /* Purple */
+  --morphic-accent-light: #a78bfa;
+  --morphic-accent-dark: #7c3aed;
+  --morphic-accent-rgb: 139, 92, 246;
+  
+  --morphic-secondary: #10b981; /* Green */
+  --morphic-secondary-light: #34d399;
+  --morphic-secondary-dark: #059669;
+  --morphic-secondary-rgb: 16, 185, 129;
+  
+  /* States */
   --morphic-success: #10b981;
+  --morphic-success-light: #34d399;
+  --morphic-success-dark: #059669;
   --morphic-success-rgb: 16, 185, 129;
+  
   --morphic-warning: #f59e0b;
+  --morphic-warning-light: #fbbf24;
+  --morphic-warning-dark: #d97706;
   --morphic-warning-rgb: 245, 158, 11;
+  
   --morphic-error: #ef4444;
+  --morphic-error-light: #f87171;
+  --morphic-error-dark: #dc2626;
   --morphic-error-rgb: 239, 68, 68;
   
   /* Neutral colors */
-  --morphic-neutral-50: #f9fafb;
-  --morphic-neutral-100: #f3f4f6;
-  --morphic-neutral-200: #e5e7eb;
-  --morphic-neutral-300: #d1d5db;
-  --morphic-neutral-400: #9ca3af;
-  --morphic-neutral-500: #6b7280;
-  --morphic-neutral-600: #4b5563;
-  --morphic-neutral-700: #374151;
-  --morphic-neutral-800: #1f2937;
-  --morphic-neutral-900: #111827;
+  --morphic-neutral-50: #f8fafc;
+  --morphic-neutral-100: #f1f5f9;
+  --morphic-neutral-200: #e2e8f0;
+  --morphic-neutral-300: #cbd5e1;
+  --morphic-neutral-400: #94a3b8;
+  --morphic-neutral-500: #64748b;
+  --morphic-neutral-600: #475569;
+  --morphic-neutral-700: #334155;
+  --morphic-neutral-800: #1e293b;
+  --morphic-neutral-900: #0f172a;
   
-  /* Light mode specific */
-  --morphic-bg-primary: rgba(255, 255, 255, 0.95);
+  /* Light theme */
+  --morphic-bg-primary: #ffffff;
   --morphic-bg-primary-rgb: 255, 255, 255;
-  --morphic-bg-secondary: rgba(248, 250, 252, 0.8);
-  --morphic-bg-secondary-rgb: 248, 250, 252;  
-  --morphic-bg-tertiary: rgba(241, 245, 249, 0.5);
-  --morphic-text-primary: var(--morphic-neutral-900);
-  --morphic-text-secondary: var(--morphic-neutral-600);
-  --morphic-text-tertiary: var(--morphic-neutral-500);
-  --morphic-border-light: rgba(226, 232, 240, 0.7);
-  --morphic-border-medium: rgba(203, 213, 225, 0.7);
+  --morphic-bg-secondary: #f8fafc;
+  --morphic-bg-secondary-rgb: 248, 250, 252;
+  --morphic-bg-tertiary: #f1f5f9;
+  --morphic-bg-tertiary-rgb: 241, 245, 249;
   
-  /* Glass effect */
-  --morphic-glass-border: linear-gradient(
-    130deg,
-    rgba(255, 255, 255, 0.6) 0%,
-    rgba(255, 255, 255, 0.1) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  --morphic-blur-backdrop: blur(12px);
-  --morphic-blur-sm: blur(4px);
-  --morphic-blur-md: blur(8px);
-  --morphic-blur-lg: blur(16px);
+  --morphic-text-primary: #0f172a;
+  --morphic-text-secondary: #475569;
+  --morphic-text-tertiary: #64748b;
+  --morphic-text-light: #94a3b8;
+  
+  --morphic-border-light: #e2e8f0;
+  --morphic-border-light-rgb: 226, 232, 240;
+  --morphic-border-medium: #cbd5e1;
+  --morphic-border-dark: #94a3b8;
+  --morphic-border-dark-rgb: 148, 163, 184;
+  
+  --morphic-grid-rgb: 226, 232, 240;
+  --morphic-particle-rgb: 255, 255, 255;
+  
+  /* Gradients */
+  --morphic-bg-gradient-start: #f8fafc;
+  --morphic-bg-gradient-end: #f1f5f9;
   
   /* Shadows */
-  --morphic-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04),
-                       0 2px 4px rgba(0, 0, 0, 0.06);
-  --morphic-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.02),
-                       0 4px 8px rgba(0, 0, 0, 0.04),
-                       0 8px 16px rgba(0, 0, 0, 0.06);
-  --morphic-shadow-lg: 0 4px 6px rgba(0, 0, 0, 0.01),
-                       0 8px 16px rgba(0, 0, 0, 0.03),
-                       0 16px 32px rgba(0, 0, 0, 0.05);
-  --morphic-shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.04);
+  --morphic-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --morphic-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --morphic-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --morphic-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   
-  /* Glow effects */
-  --morphic-glow-sm: 0 0 8px rgba(var(--morphic-primary-rgb), 0.2);
-  --morphic-glow-md: 0 0 16px rgba(var(--morphic-primary-rgb), 0.3);
-  --morphic-glow-lg: 0 0 24px rgba(var(--morphic-primary-rgb), 0.4);
+  /* Effects */
+  --morphic-blur-backdrop: blur(6px);
   
-  /* Border radius */
+  /* Radius */
   --morphic-radius-sm: 0.25rem;
   --morphic-radius-md: 0.5rem;
   --morphic-radius-lg: 1rem;
@@ -108,14 +117,122 @@
   --morphic-z-50: 50;
   --morphic-z-auto: auto;
   
-  /* Legacy compatibility - fallbacks for old code */
-  --primary-color: var(--morphic-primary, #0066cc);
-  --secondary-color: var(--morphic-secondary, #35495e);
-  --accent-color: var(--morphic-accent, #00c6ff);
-  --error-color: var(--morphic-error, #ef4444);
-  --success-color: var(--morphic-success, #10b981);
-  --warning-color: var(--morphic-warning, #f59e0b);
+  /* Legacy compatibility - for older code that might still use these variables */
+  --primary-color: var(--morphic-primary);
+  --secondary-color: var(--morphic-secondary);
+  --accent-color: var(--morphic-accent);
+  --success-color: var(--morphic-success);
+  --warning-color: var(--morphic-warning);
+  --error-color: var(--morphic-error);
+  --text-color: var(--morphic-text-primary);
+  --text-light: var(--morphic-text-secondary);
+  --text-lighter: var(--morphic-text-tertiary);
+  --bg-color: var(--morphic-bg-primary);
+  --bg-light: var(--morphic-bg-secondary);
+  --bg-lighter: var(--morphic-bg-tertiary);
+  --border-color: var(--morphic-border-light);
 }
+
+:root.dark {
+  /* Dark theme */
+  --morphic-bg-primary: #1e293b;
+  --morphic-bg-primary-rgb: 30, 41, 59;
+  --morphic-bg-primary-dark: #1e293b;
+  --morphic-bg-secondary: #0f172a;
+  --morphic-bg-secondary-rgb: 15, 23, 42;
+  --morphic-bg-secondary-dark: #0f172a;
+  --morphic-bg-tertiary: #334155;
+  --morphic-bg-tertiary-rgb: 51, 65, 85;
+  --morphic-bg-tertiary-dark: #334155;
+  
+  --morphic-text-primary: #f8fafc;
+  --morphic-text-primary-dark: #f8fafc;
+  --morphic-text-secondary: #cbd5e1;
+  --morphic-text-secondary-dark: #cbd5e1;
+  --morphic-text-tertiary: #94a3b8;
+  --morphic-text-tertiary-dark: #94a3b8;
+  --morphic-text-light: #64748b;
+  
+  --morphic-border-light: #334155;
+  --morphic-border-light-rgb: 51, 65, 85;
+  --morphic-border-medium: #475569;
+  --morphic-border-dark: #64748b;
+  --morphic-border-dark-rgb: 100, 116, 139;
+  
+  --morphic-grid-rgb: 51, 65, 85;
+  --morphic-particle-rgb: 226, 232, 240;
+  
+  /* Gradients */
+  --morphic-bg-gradient-start-dark: #0f172a;
+  --morphic-bg-gradient-end-dark: #1e293b;
+  
+  /* Shadows - adjusted for dark mode */
+  --morphic-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --morphic-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --morphic-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  --morphic-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* Glass effect */
+--morphic-glass-border: linear-gradient(
+  130deg,
+  rgba(255, 255, 255, 0.6) 0%,
+  rgba(255, 255, 255, 0.1) 50%,
+  rgba(255, 255, 255, 0) 100%
+);
+--morphic-blur-sm: blur(4px);
+--morphic-blur-md: blur(8px);
+--morphic-blur-lg: blur(16px);
+
+/* Shadows */
+--morphic-shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.04);
+
+/* Glow effects */
+--morphic-glow-sm: 0 0 8px rgba(var(--morphic-primary-rgb), 0.2);
+--morphic-glow-md: 0 0 16px rgba(var(--morphic-primary-rgb), 0.3);
+--morphic-glow-lg: 0 0 24px rgba(var(--morphic-primary-rgb), 0.4);
+
+/* Border radius */
+--morphic-radius-sm: 0.25rem;
+--morphic-radius-md: 0.5rem;
+--morphic-radius-lg: 1rem;
+--morphic-radius-xl: 1.5rem;
+--morphic-radius-full: 9999px;
+
+/* Spacing */
+--morphic-space-1: 0.25rem;
+--morphic-space-2: 0.5rem;
+--morphic-space-3: 0.75rem;
+--morphic-space-4: 1rem;
+--morphic-space-5: 1.25rem;
+--morphic-space-6: 1.5rem;
+--morphic-space-8: 2rem;
+--morphic-space-10: 2.5rem;
+--morphic-space-12: 3rem;
+--morphic-space-16: 4rem;
+--morphic-space-20: 5rem;
+
+/* Transitions */
+--morphic-transition-base: 0.2s ease;
+--morphic-transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+--morphic-transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+/* Z-index scale */
+--morphic-z-0: 0;
+--morphic-z-10: 10;
+--morphic-z-20: 20;
+--morphic-z-30: 30;
+--morphic-z-40: 40;
+--morphic-z-50: 50;
+--morphic-z-auto: auto;
+
+/* Legacy compatibility - for older code that might still use these variables */
+--primary-color: var(--morphic-primary, #0066cc);
+--secondary-color: var(--morphic-secondary, #35495e);
+--accent-color: var(--morphic-accent, #00c6ff);
+--error-color: var(--morphic-error, #ef4444);
+--success-color: var(--morphic-success, #10b981);
+--warning-color: var(--morphic-warning, #f59e0b);
 
 /* Dark mode theme */
 .dark-mode {

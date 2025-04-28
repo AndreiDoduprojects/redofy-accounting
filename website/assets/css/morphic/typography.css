@@ -1,0 +1,337 @@
+/* 
+ * Redofy Morphic Design System - Typography
+ * Typography utilities for consistent text styling
+ */
+
+/* Font families */
+.morphic-font-sans {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.morphic-font-mono {
+  font-family: 'Roboto Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.morphic-font-serif {
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* Font sizes */
+.morphic-text-xs {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+
+.morphic-text-sm {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.morphic-text-base {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+.morphic-text-lg {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.morphic-text-xl {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.morphic-text-2xl {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+.morphic-text-3xl {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}
+
+.morphic-text-4xl {
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+}
+
+.morphic-text-5xl {
+  font-size: 3rem; /* 48px */
+  line-height: 1;
+}
+
+.morphic-text-6xl {
+  font-size: 3.75rem; /* 60px */
+  line-height: 1;
+}
+
+/* Font weights */
+.morphic-font-thin {
+  font-weight: 100;
+}
+
+.morphic-font-extralight {
+  font-weight: 200;
+}
+
+.morphic-font-light {
+  font-weight: 300;
+}
+
+.morphic-font-normal {
+  font-weight: 400;
+}
+
+.morphic-font-medium {
+  font-weight: 500;
+}
+
+.morphic-font-semibold {
+  font-weight: 600;
+}
+
+.morphic-font-bold {
+  font-weight: 700;
+}
+
+.morphic-font-extrabold {
+  font-weight: 800;
+}
+
+.morphic-font-black {
+  font-weight: 900;
+}
+
+/* Text alignment */
+.morphic-text-left {
+  text-align: left;
+}
+
+.morphic-text-center {
+  text-align: center;
+}
+
+.morphic-text-right {
+  text-align: right;
+}
+
+.morphic-text-justify {
+  text-align: justify;
+}
+
+/* Text decoration */
+.morphic-underline {
+  text-decoration: underline;
+}
+
+.morphic-line-through {
+  text-decoration: line-through;
+}
+
+.morphic-no-underline {
+  text-decoration: none;
+}
+
+/* Text transform */
+.morphic-uppercase {
+  text-transform: uppercase;
+}
+
+.morphic-lowercase {
+  text-transform: lowercase;
+}
+
+.morphic-capitalize {
+  text-transform: capitalize;
+}
+
+.morphic-normal-case {
+  text-transform: none;
+}
+
+/* Letter spacing */
+.morphic-tracking-tighter {
+  letter-spacing: -0.05em;
+}
+
+.morphic-tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.morphic-tracking-normal {
+  letter-spacing: 0;
+}
+
+.morphic-tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.morphic-tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.morphic-tracking-widest {
+  letter-spacing: 0.1em;
+}
+
+/* Line height */
+.morphic-leading-none {
+  line-height: 1;
+}
+
+.morphic-leading-tight {
+  line-height: 1.25;
+}
+
+.morphic-leading-snug {
+  line-height: 1.375;
+}
+
+.morphic-leading-normal {
+  line-height: 1.5;
+}
+
+.morphic-leading-relaxed {
+  line-height: 1.625;
+}
+
+.morphic-leading-loose {
+  line-height: 2;
+}
+
+/* Text overflow */
+.morphic-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.morphic-text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.morphic-text-clip {
+  text-overflow: clip;
+}
+
+/* Vertical alignment */
+.morphic-align-baseline {
+  vertical-align: baseline;
+}
+
+.morphic-align-top {
+  vertical-align: top;
+}
+
+.morphic-align-middle {
+  vertical-align: middle;
+}
+
+.morphic-align-bottom {
+  vertical-align: bottom;
+}
+
+.morphic-align-text-top {
+  vertical-align: text-top;
+}
+
+.morphic-align-text-bottom {
+  vertical-align: text-bottom;
+}
+
+/* Text colors */
+.morphic-text-primary {
+  color: var(--morphic-text-primary);
+}
+
+.morphic-text-secondary {
+  color: var(--morphic-text-secondary);
+}
+
+.morphic-text-muted {
+  color: var(--morphic-text-muted);
+}
+
+.morphic-text-accent {
+  color: var(--morphic-primary);
+}
+
+.morphic-text-success {
+  color: var(--morphic-success);
+}
+
+.morphic-text-warning {
+  color: var(--morphic-warning);
+}
+
+.morphic-text-error {
+  color: var(--morphic-error);
+}
+
+.morphic-text-info {
+  color: var(--morphic-info);
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .morphic-sm-text-xs { font-size: 0.75rem; }
+  .morphic-sm-text-sm { font-size: 0.875rem; }
+  .morphic-sm-text-base { font-size: 1rem; }
+  .morphic-sm-text-lg { font-size: 1.125rem; }
+  .morphic-sm-text-xl { font-size: 1.25rem; }
+  .morphic-sm-text-2xl { font-size: 1.5rem; }
+  .morphic-sm-text-3xl { font-size: 1.875rem; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .morphic-md-text-xs { font-size: 0.75rem; }
+  .morphic-md-text-sm { font-size: 0.875rem; }
+  .morphic-md-text-base { font-size: 1rem; }
+  .morphic-md-text-lg { font-size: 1.125rem; }
+  .morphic-md-text-xl { font-size: 1.25rem; }
+  .morphic-md-text-2xl { font-size: 1.5rem; }
+  .morphic-md-text-3xl { font-size: 1.875rem; }
+}
+
+/* Typography helper classes */
+.morphic-prose {
+  max-width: 65ch;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.morphic-prose p,
+.morphic-prose ul,
+.morphic-prose ol {
+  margin-bottom: 1.5em;
+}
+
+.morphic-prose h1,
+.morphic-prose h2,
+.morphic-prose h3,
+.morphic-prose h4 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.3;
+}
+
+.morphic-prose a {
+  color: var(--morphic-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.morphic-prose a:hover {
+  color: var(--morphic-primary-dark);
+}
+
+/* RTL support */
+[dir="rtl"] .morphic-text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .morphic-text-right {
+  text-align: left;
+} 

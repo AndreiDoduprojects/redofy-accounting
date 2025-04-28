@@ -1,101 +1,173 @@
 <template>
-  <div>
+  <div class="home-page">
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="container">
         <div class="hero-content">
-          <div class="hero-text">
-            <h1>Modern AI-Powered Accounting for Swedish Businesses</h1>
-            <p class="hero-subtitle">Redofy leverages the latest in AI technology to automate your accounting processes, saving you time and money.</p>
-            <div class="hero-cta">
-              <NuxtLink to="/signup" class="btn btn-primary">Start Free Trial</NuxtLink>
-              <NuxtLink to="/demo" class="btn btn-secondary">Request a Demo</NuxtLink>
+          <h1>Modern ekonomihantering för växande företag</h1>
+          <p class="hero-subtitle">
+            Automatiserad bokföring, fakturering och lönehantering med AI-stöd som ger dig tid att fokusera på din kärnverksamhet
+          </p>
+          <div class="hero-buttons">
+            <NuxtLink to="/demo" class="btn btn-primary btn-large">Boka demo</NuxtLink>
+            <NuxtLink to="/tjanster" class="btn btn-secondary btn-large">Utforska tjänster</NuxtLink>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">2,500+</span>
+              <span class="stat-label">Nöjda kunder</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">Kundnöjdhet</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">60%</span>
+              <span class="stat-label">Tidsbesparing</span>
             </div>
           </div>
-          <div class="hero-image">
-            <img src="/img/hero-dashboard.png" alt="Redofy Dashboard" />
-          </div>
+        </div>
+        <div class="hero-image">
+          <img src="/img/illustrations/dashboard-preview.png" alt="Redofy Dashboard" />
         </div>
       </div>
     </section>
 
     <!-- Features Section -->
-    <section class="section features-section">
+    <section class="features-section">
       <div class="container">
-        <h2 class="section-title">Why Choose Redofy Accounting?</h2>
+        <div class="section-header">
+          <h2>Allt du behöver för att driva din verksamhet framåt</h2>
+          <p>Kraftfulla verktyg som gör ekonomihanteringen enkel och effektiv</p>
+        </div>
         
         <div class="features-grid">
           <div class="feature-card">
-            <div class="feature-icon">📊</div>
-            <h3>Real-time Financial Dashboard</h3>
-            <p>Get instant visibility into your financial status with our intuitive dashboard.</p>
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 8v13H3V8"></path>
+                <path d="M1 3h22v5H1z"></path>
+                <path d="M10 12h4"></path>
+              </svg>
+            </div>
+            <h3>Automatiserad bokföring</h3>
+            <p>AI-stödd bokföring som automatiskt kategoriserar transaktioner och minskar manuellt arbete</p>
           </div>
           
           <div class="feature-card">
-            <div class="feature-icon">🤖</div>
-            <h3>AI-Powered Automation</h3>
-            <p>Our AI automatically categorizes transactions and reconciles accounts.</p>
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="M7 15h0M2 9.5h20"></path>
+              </svg>
+            </div>
+            <h3>Digital fakturering</h3>
+            <p>Skapa och skicka professionella fakturor på sekunder med automatiska påminnelser</p>
           </div>
           
           <div class="feature-card">
-            <div class="feature-icon">🧾</div>
-            <h3>Smart Receipt Management</h3>
-            <p>Snap a photo and our system extracts all the necessary data.</p>
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>Lönehantering</h3>
+            <p>Automatisera löneprocessen med integrerad skatt- och avgiftsberäkning</p>
           </div>
           
           <div class="feature-card">
-            <div class="feature-icon">📱</div>
-            <h3>Mobile-Friendly</h3>
-            <p>Access your accounting system from anywhere, on any device.</p>
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v8"></path>
+                <path d="m16 6-4 4-4-4"></path>
+                <rect x="2" y="14" width="20" height="8" rx="2"></rect>
+                <path d="M6 18h.01M10 18h.01"></path>
+              </svg>
+            </div>
+            <h3>Integrationer</h3>
+            <p>Sömlös integration med banktjänster, Swish, Fortnox, Visma och många fler</p>
           </div>
           
           <div class="feature-card">
-            <div class="feature-icon">🔗</div>
-            <h3>Seamless Integrations</h3>
-            <p>Connect with popular business tools and banking systems.</p>
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+                <path d="M8.5 8.5v.01"></path>
+                <path d="M16 15.5v.01"></path>
+                <path d="M12 12v.01"></path>
+                <path d="M11 17v.01"></path>
+                <path d="M7 14v.01"></path>
+              </svg>
+            </div>
+            <h3>AI-baserade insikter</h3>
+            <p>Få värdefulla ekonomiska insikter och prognoser baserade på din företagsdata</p>
           </div>
           
           <div class="feature-card">
-            <div class="feature-icon">🛡️</div>
-            <h3>Bank-Grade Security</h3>
-            <p>Your financial data is protected with enterprise-level security.</p>
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="16" height="6" x="4" y="5" rx="2"></rect>
+                <rect width="16" height="6" x="4" y="13" rx="2"></rect>
+                <path d="M9 11v-2"></path>
+                <path d="M9 19v-2"></path>
+                <path d="M15 11v-2"></path>
+                <path d="M15 19v-2"></path>
+              </svg>
+            </div>
+            <h3>Realtidsöversikt</h3>
+            <p>Få en tydlig överblick över ditt företags ekonomi när och var du vill</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="section testimonials-section">
+    <section class="testimonials-section">
       <div class="container">
-        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="section-header">
+          <h2>Vad våra kunder säger</h2>
+          <p>Hundratals företag förlitar sig på Redofy för sin ekonomihantering</p>
+        </div>
         
-        <div class="testimonial-slider">
-          <div class="testimonial">
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
             <div class="testimonial-content">
-              <p>"Redofy has transformed our accounting process. What used to take days now takes minutes!"</p>
-              <div class="testimonial-author">
-                <strong>Maria Andersson</strong>
-                <span>CEO, TechStars AB</span>
+              <p>"Redofy har revolutionerat vår ekonomihantering. Vi sparar flera timmar varje vecka och har full kontroll över vår ekonomi."</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="/img/testimonial-1.jpg" alt="Anna Berglund" />
+              <div>
+                <h4>Anna Berglund</h4>
+                <p>VD, Berglunds Bageri</p>
               </div>
             </div>
           </div>
           
-          <div class="testimonial">
+          <div class="testimonial-card">
             <div class="testimonial-content">
-              <p>"The AI capabilities are impressive. Our bookkeeping is nearly hands-free now."</p>
-              <div class="testimonial-author">
-                <strong>Johan Lindgren</strong>
-                <span>Finance Director, Nordic Solutions</span>
+              <p>"Den automatiserade bokföringen och de fantastiska rapporterna har gett oss insikter som hjälpt oss att växa med 30% under det senaste året."</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="/img/testimonial-2.jpg" alt="Johan Andersson" />
+              <div>
+                <h4>Johan Andersson</h4>
+                <p>Ekonomichef, Tech Solutions AB</p>
               </div>
             </div>
           </div>
           
-          <div class="testimonial">
+          <div class="testimonial-card">
             <div class="testimonial-content">
-              <p>"Customer support is exceptional. They're always there when we need assistance."</p>
-              <div class="testimonial-author">
-                <strong>Sofia Ekström</strong>
-                <span>Owner, Ekström Design</span>
+              <p>"Kundsupporten är enastående. De svarar snabbt och hjälper till med allt vi behöver. Bästa investeringen för vårt företag."</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="/img/testimonial-3.jpg" alt="Maria Svensson" />
+              <div>
+                <h4>Maria Svensson</h4>
+                <p>Grundare, Svea Design</p>
               </div>
             </div>
           </div>
@@ -104,88 +176,17 @@
     </section>
 
     <!-- Pricing Section -->
-    <section class="section pricing-section">
-      <div class="container">
-        <h2 class="section-title">Simple, Transparent Pricing</h2>
-        <p class="section-subtitle text-center">Choose the plan that works best for your business</p>
-        
-        <div class="pricing-cards">
-          <div class="pricing-card">
-            <div class="pricing-header">
-              <h3>Starter</h3>
-              <div class="pricing-price">
-                <span class="currency">kr</span>
-                <span class="amount">299</span>
-                <span class="period">/month</span>
-              </div>
-            </div>
-            <ul class="pricing-features">
-              <li>Up to 50 transactions per month</li>
-              <li>Basic receipt scanning</li>
-              <li>Financial dashboard</li>
-              <li>Email support</li>
-            </ul>
-            <div class="pricing-cta">
-              <NuxtLink to="/signup?plan=starter" class="btn btn-primary">Get Started</NuxtLink>
-            </div>
-          </div>
-          
-          <div class="pricing-card featured">
-            <div class="pricing-badge">Most Popular</div>
-            <div class="pricing-header">
-              <h3>Business</h3>
-              <div class="pricing-price">
-                <span class="currency">kr</span>
-                <span class="amount">599</span>
-                <span class="period">/month</span>
-              </div>
-            </div>
-            <ul class="pricing-features">
-              <li>Up to 500 transactions per month</li>
-              <li>Advanced AI categorization</li>
-              <li>Unlimited receipt scanning</li>
-              <li>Custom reports</li>
-              <li>Priority support</li>
-            </ul>
-            <div class="pricing-cta">
-              <NuxtLink to="/signup?plan=business" class="btn btn-primary">Get Started</NuxtLink>
-            </div>
-          </div>
-          
-          <div class="pricing-card">
-            <div class="pricing-header">
-              <h3>Enterprise</h3>
-              <div class="pricing-price">
-                <span class="currency">kr</span>
-                <span class="amount">1299</span>
-                <span class="period">/month</span>
-              </div>
-            </div>
-            <ul class="pricing-features">
-              <li>Unlimited transactions</li>
-              <li>Full automation suite</li>
-              <li>Advanced reporting</li>
-              <li>Dedicated account manager</li>
-              <li>Custom integrations</li>
-              <li>24/7 priority support</li>
-            </ul>
-            <div class="pricing-cta">
-              <NuxtLink to="/signup?plan=enterprise" class="btn btn-primary">Get Started</NuxtLink>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <PricingPlans />
 
     <!-- CTA Section -->
-    <section class="section cta-section">
+    <section class="cta-section">
       <div class="container">
         <div class="cta-content">
-          <h2>Ready to transform your accounting?</h2>
-          <p>Join thousands of businesses already using Redofy to simplify their accounting.</p>
+          <h2>Redo att ta nästa steg?</h2>
+          <p>Boka en demo och se hur Redofy kan hjälpa ditt företag att växa</p>
           <div class="cta-buttons">
-            <NuxtLink to="/signup" class="btn btn-primary">Start Free Trial</NuxtLink>
-            <NuxtLink to="/contact" class="btn btn-secondary">Contact Sales</NuxtLink>
+            <NuxtLink to="/demo" class="btn btn-primary btn-large">Boka demo</NuxtLink>
+            <NuxtLink to="/kontakt" class="btn btn-secondary btn-large">Kontakta oss</NuxtLink>
           </div>
         </div>
       </div>
@@ -194,240 +195,237 @@
 </template>
 
 <script setup>
-// Home page setup
+// No extra logic needed for this page
 </script>
 
 <style scoped>
-.hero-section {
-  padding: 5rem 0;
-  background-color: #f9fafc;
+.home-page {
+  overflow-x: hidden;
 }
 
-.hero-content {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.section-header p {
+  font-size: 1.125rem;
+  color: var(--light-text);
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 6rem 0;
+  background: linear-gradient(to bottom, var(--light-background), var(--background-color));
+  position: relative;
+}
+
+.hero-section .container {
   display: flex;
   align-items: center;
   gap: 3rem;
+  position: relative;
+  z-index: 1;
 }
 
-.hero-text {
+.hero-content {
   flex: 1;
 }
 
-.hero-image {
-  flex: 1;
-  text-align: center;
-}
-
-.hero-image img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
 }
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: var(--secondary-color);
   margin-bottom: 2rem;
+  color: var(--light-text);
 }
 
-.hero-cta {
+.hero-buttons {
   display: flex;
   gap: 1rem;
+  margin-bottom: 2.5rem;
 }
 
-.features-section {
-  background-color: white;
+.btn-large {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
 }
 
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.feature-card {
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  background-color: white;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.feature-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.testimonials-section {
-  background-color: var(--light-gray);
-}
-
-.testimonial-slider {
+.hero-stats {
   display: flex;
-  gap: 2rem;
-  overflow-x: auto;
-  padding: 1rem 0;
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  gap: 2.5rem;
 }
 
-.testimonial-slider::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome/Safari */
-}
-
-.testimonial {
-  min-width: 300px;
-  flex: 1;
-}
-
-.testimonial-content {
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.testimonial-content p {
-  font-style: italic;
-  margin-bottom: 1rem;
-}
-
-.testimonial-author {
+.stat-item {
   display: flex;
   flex-direction: column;
 }
 
-.section-subtitle {
-  max-width: 600px;
-  margin: 0 auto 3rem;
-  color: var(--dark-gray);
-}
-
-.pricing-cards {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.pricing-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  padding: 2rem;
-  min-width: 300px;
-  flex: 1;
-  max-width: 350px;
-  position: relative;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.pricing-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.pricing-card.featured {
-  border: 2px solid var(--primary-color);
-  transform: scale(1.05);
-}
-
-.pricing-card.featured:hover {
-  transform: scale(1.05) translateY(-10px);
-}
-
-.pricing-badge {
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--primary-color);
-  color: white;
-  padding: 0.25rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.pricing-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.pricing-price {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  margin-top: 1rem;
-}
-
-.currency {
+.stat-number {
   font-size: 1.5rem;
-  font-weight: 600;
-  margin-right: 0.25rem;
-}
-
-.amount {
-  font-size: 3rem;
   font-weight: 700;
-  line-height: 1;
+  color: var(--primary-color);
 }
 
-.period {
-  font-size: 1rem;
-  color: var(--dark-gray);
-  margin-left: 0.25rem;
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--light-text);
 }
 
-.pricing-features {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 2rem;
+.hero-image {
+  flex: 1;
 }
 
-.pricing-features li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid var(--light-gray);
-  position: relative;
-  padding-left: 1.5rem;
+.hero-image img {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-.pricing-features li::before {
-  content: "✓";
-  color: var(--success-color);
-  position: absolute;
-  left: 0;
+/* Features Section */
+.features-section {
+  padding: 6rem 0;
+  background-color: var(--background-color);
 }
 
-.pricing-cta {
-  text-align: center;
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.cta-section {
+.feature-card {
+  background-color: var(--light-background);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
   background-color: var(--primary-color);
   color: white;
-  text-align: center;
+  border-radius: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+}
+
+.feature-card p {
+  color: var(--light-text);
+  font-size: 0.95rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 6rem 0;
+  background-color: var(--light-background);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: var(--background-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
+}
+
+.testimonial-content {
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonial-author img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-author h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-color);
+}
+
+.testimonial-author p {
+  font-size: 0.875rem;
+  color: var(--light-text);
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 6rem 0;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .cta-content {
-  max-width: 800px;
+  text-align: center;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 .cta-content h2 {
-  color: white;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: white;
 }
 
 .cta-content p {
+  font-size: 1.25rem;
   margin-bottom: 2rem;
-  font-size: 1.2rem;
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .cta-buttons {
@@ -442,50 +440,86 @@
 }
 
 .cta-section .btn-primary:hover {
-  background-color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .cta-section .btn-secondary {
   background-color: transparent;
   color: white;
-  border: 1px solid white;
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .cta-section .btn-secondary:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+/* Dark mode specific adjustments */
+:deep(.dark-mode) .hero-section {
+  background: linear-gradient(to bottom, var(--light-background), var(--background-color));
+}
+
+:deep(.dark-mode) .feature-card {
+  background-color: var(--light-background);
+  border-color: var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+}
+
+:deep(.dark-mode) .testimonial-card {
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+}
+
+:deep(.dark-mode) .hero-image img {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
+}
+
+:deep(.dark-mode) .mobile-menu {
+  background-color: var(--background-color);
+}
+
+:deep(.dark-mode) .mobile-menu-toggle span {
+  background-color: var(--text-color);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-section .container {
+    flex-direction: column;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .hero-stats {
+    justify-content: center;
+  }
+  
+  .features-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column-reverse;
-  }
-  
-  .features-grid {
+  .features-grid,
+  .testimonials-grid {
     grid-template-columns: 1fr;
   }
   
-  .pricing-cards {
-    flex-direction: column;
-    align-items: center;
+  .hero-content h1 {
+    font-size: 2.5rem;
   }
   
-  .pricing-card {
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  .pricing-card.featured {
-    transform: none;
-    order: -1;
-    margin: 1rem 0;
-  }
-  
-  .pricing-card.featured:hover {
-    transform: translateY(-10px);
-  }
-  
-  .cta-buttons {
-    flex-direction: column;
+  .section-header h2 {
+    font-size: 2rem;
   }
 }
 </style> 
